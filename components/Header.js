@@ -12,6 +12,9 @@ const Header = () => (
     <Link href="/about">
       <a style={plainLinkStyle}>About</a>
     </Link>
+    <Link href="/blog">
+      <a style={plainLinkStyle}>Blog</a>
+    </Link>
   </div>
 );
 

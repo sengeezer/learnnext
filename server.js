@@ -11,6 +11,13 @@ app.prepare()
 
     server.get('/p/:id', (req, res) => {
       const trueUrl = '/post/';
+      const queryParams = { id: req.params.id };
+
+      app.render(req, res, trueUrl, queryParams);
+    });
+
+    server.get('/s/:id', (req, res) => {
+      const trueUrl = '/show';
       const queryParams = { title: req.params.id };
 
       app.render(req, res, trueUrl, queryParams);

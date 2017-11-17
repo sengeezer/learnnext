@@ -9,6 +9,13 @@ app.prepare()
   .then(() => {
     const server = express();
 
+    server.get('/p/:id', (req, res) => {
+      const trueUrl = '/post/';
+      const queryParams = { title: req.params.id };
+
+      app.render(req, res, trueUrl, queryParams);
+    });
+
     server.get('*', (req, res) => {
       return handle(req, res);
     });

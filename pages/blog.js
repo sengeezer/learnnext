@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 
 const PostLink = (props) => (
   <li>
-    <Link href={`/post?title=${props.title}`}>
+    <Link as={`/p/${props.id}`} href={`/post?title=${props.title}`}>
       <a>{props.title}</a>
     </Link>
   </li>
@@ -13,9 +13,9 @@ export default () => (
   <Layout>
     <h1>The Blawg</h1>
     <ul>
-      <PostLink title="Hello Next" />
-      <PostLink title="This is cool" />
-      <PostLink title="And so is this" />
+      <PostLink id="hello-next" title="Hello Next" />
+      <PostLink id="this-is-cool" title="This is cool" />
+      <PostLink id="and-so-is-this" title="And so is this" />
     </ul>
   </Layout>
 );

@@ -17,11 +17,15 @@
   "author": "F M Albertin",
   "license": "MIT",
   "dependencies": {
+    "asn1.js": "^5.0.0",
+    "electron-to-chromium": "^1.3.27",
+    "emitter-mixin": "0.0.3",
     "express": "^4.16.2",
     "isomorphic-unfetch": "^2.0.0",
     "next": "^4.1.4",
     "react": "^16.1.1",
-    "react-dom": "^16.1.1"
+    "react-dom": "^16.1.1",
+    "react-markdown": "^2.5.1"
   },
   "devDependencies": {
     "eslint": "^4.11.0",
